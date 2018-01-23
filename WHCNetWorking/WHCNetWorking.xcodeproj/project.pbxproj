@@ -16,7 +16,7 @@
 		DBA19F6E20170E9E0037FBD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA19F6D20170E9E0037FBD7 /* main.m */; };
 		DBA19F7820170E9E0037FBD7 /* WHCNetWorkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA19F7720170E9E0037FBD7 /* WHCNetWorkingTests.m */; };
 		DBA19F8320170E9E0037FBD7 /* WHCNetWorkingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA19F8220170E9E0037FBD7 /* WHCNetWorkingUITests.m */; };
-		DBA19F9320170EC10037FBD7 /* WHCNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA19F9120170EC10037FBD7 /* WHCNetWorkManager.m */; };
+		DBA19FD5201715AE0037FBD7 /* WHCNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA19FD3201715AE0037FBD7 /* WHCNetWorkManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +56,8 @@
 		DBA19F7E20170E9E0037FBD7 /* WHCNetWorkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WHCNetWorkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA19F8220170E9E0037FBD7 /* WHCNetWorkingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHCNetWorkingUITests.m; sourceTree = "<group>"; };
 		DBA19F8420170E9E0037FBD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DBA19F9120170EC10037FBD7 /* WHCNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHCNetWorkManager.m; sourceTree = "<group>"; };
-		DBA19F9220170EC10037FBD7 /* WHCNetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHCNetWorkManager.h; sourceTree = "<group>"; };
+		DBA19FD3201715AE0037FBD7 /* WHCNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHCNetWorkManager.m; sourceTree = "<group>"; };
+		DBA19FD4201715AE0037FBD7 /* WHCNetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHCNetWorkManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +106,7 @@
 		DBA19F5220170E9E0037FBD7 = {
 			isa = PBXGroup;
 			children = (
+				DBA19FD2201715AE0037FBD7 /* WHCNetWorkManager */,
 				DBA19F5D20170E9E0037FBD7 /* WHCNetWorking */,
 				DBA19F7620170E9E0037FBD7 /* WHCNetWorkingTests */,
 				DBA19F8120170E9E0037FBD7 /* WHCNetWorkingUITests */,
@@ -128,7 +129,6 @@
 		DBA19F5D20170E9E0037FBD7 /* WHCNetWorking */ = {
 			isa = PBXGroup;
 			children = (
-				DBA19F9020170EC10037FBD7 /* WHCNetWorkManager */,
 				DBA19F5E20170E9E0037FBD7 /* AppDelegate.h */,
 				DBA19F5F20170E9E0037FBD7 /* AppDelegate.m */,
 				DBA19F6120170E9E0037FBD7 /* ViewController.h */,
@@ -160,11 +160,11 @@
 			path = WHCNetWorkingUITests;
 			sourceTree = "<group>";
 		};
-		DBA19F9020170EC10037FBD7 /* WHCNetWorkManager */ = {
+		DBA19FD2201715AE0037FBD7 /* WHCNetWorkManager */ = {
 			isa = PBXGroup;
 			children = (
-				DBA19F9120170EC10037FBD7 /* WHCNetWorkManager.m */,
-				DBA19F9220170EC10037FBD7 /* WHCNetWorkManager.h */,
+				DBA19FD3201715AE0037FBD7 /* WHCNetWorkManager.m */,
+				DBA19FD4201715AE0037FBD7 /* WHCNetWorkManager.h */,
 			);
 			path = WHCNetWorkManager;
 			sourceTree = "<group>";
@@ -357,7 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBA19F6320170E9E0037FBD7 /* ViewController.m in Sources */,
-				DBA19F9320170EC10037FBD7 /* WHCNetWorkManager.m in Sources */,
+				DBA19FD5201715AE0037FBD7 /* WHCNetWorkManager.m in Sources */,
 				DBA19F6E20170E9E0037FBD7 /* main.m in Sources */,
 				DBA19F6020170E9E0037FBD7 /* AppDelegate.m in Sources */,
 			);
