@@ -1,0 +1,15 @@
+platform :ios, '8.0'
+
+project 'WHCNetWorking.project'
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+inhibit_all_warnings!
+
+target 'WHCNetWorking' do
+    
+#platform :ios, '8.0'
+
+pod 'AFNetworking'
+
+end
