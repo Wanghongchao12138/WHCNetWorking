@@ -1,0 +1,15 @@
+platform :ios, '8.0'
+
+project 'NetWorkDemo.project'
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+inhibit_all_warnings!
+
+target 'NetWorkDemo' do
+    
+#platform :ios, '8.0'
+
+pod 'AFNetworking'
+
+end
