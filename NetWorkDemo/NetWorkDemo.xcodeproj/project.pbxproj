@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0AC7A11DC08572C71BA1F36E /* libPods-NetWorkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 407B6A65E56305025638BCA8 /* libPods-NetWorkDemo.a */; };
+		DB666670204E8F7A0026296A /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = DB666667204E8F7A0026296A /* AFURLResponseSerialization.m */; };
+		DB666671204E8F7A0026296A /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB666668204E8F7A0026296A /* AFHTTPSessionManager.m */; };
+		DB666672204E8F7A0026296A /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB66666A204E8F7A0026296A /* AFURLSessionManager.m */; };
+		DB666673204E8F7A0026296A /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = DB66666B204E8F7A0026296A /* AFURLRequestSerialization.m */; };
+		DB666674204E8F7A0026296A /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB66666D204E8F7A0026296A /* AFNetworkReachabilityManager.m */; };
+		DB666675204E8F7A0026296A /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB66666E204E8F7A0026296A /* AFSecurityPolicy.m */; };
 		DBA19FA2201715740037FBD7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA19FA1201715740037FBD7 /* AppDelegate.m */; };
 		DBA19FA5201715740037FBD7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA19FA4201715740037FBD7 /* ViewController.m */; };
 		DBA19FA8201715740037FBD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA19FA6201715740037FBD7 /* Main.storyboard */; };
@@ -40,6 +46,19 @@
 		407B6A65E56305025638BCA8 /* libPods-NetWorkDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NetWorkDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		444BD16BD3472B6F6D592BEC /* Pods-NetWorkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetWorkDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetWorkDemo/Pods-NetWorkDemo.release.xcconfig"; sourceTree = "<group>"; };
 		BB96D3A1E02631DCAE60272C /* Pods-NetWorkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetWorkDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetWorkDemo/Pods-NetWorkDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		DB666663204E8F7A0026296A /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		DB666664204E8F7A0026296A /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		DB666665204E8F7A0026296A /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		DB666666204E8F7A0026296A /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		DB666667204E8F7A0026296A /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		DB666668204E8F7A0026296A /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		DB666669204E8F7A0026296A /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		DB66666A204E8F7A0026296A /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		DB66666B204E8F7A0026296A /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		DB66666C204E8F7A0026296A /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		DB66666D204E8F7A0026296A /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		DB66666E204E8F7A0026296A /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		DB66666F204E8F7A0026296A /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		DBA19F9D201715740037FBD7 /* NetWorkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetWorkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA19FA0201715740037FBD7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DBA19FA1201715740037FBD7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -103,6 +122,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DB666662204E8F7A0026296A /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				DB666663204E8F7A0026296A /* AFSecurityPolicy.h */,
+				DB666664204E8F7A0026296A /* AFNetworkReachabilityManager.h */,
+				DB666665204E8F7A0026296A /* AFURLSessionManager.h */,
+				DB666666204E8F7A0026296A /* AFURLRequestSerialization.h */,
+				DB666667204E8F7A0026296A /* AFURLResponseSerialization.m */,
+				DB666668204E8F7A0026296A /* AFHTTPSessionManager.m */,
+				DB666669204E8F7A0026296A /* AFURLResponseSerialization.h */,
+				DB66666A204E8F7A0026296A /* AFURLSessionManager.m */,
+				DB66666B204E8F7A0026296A /* AFURLRequestSerialization.m */,
+				DB66666C204E8F7A0026296A /* AFNetworking.h */,
+				DB66666D204E8F7A0026296A /* AFNetworkReachabilityManager.m */,
+				DB66666E204E8F7A0026296A /* AFSecurityPolicy.m */,
+				DB66666F204E8F7A0026296A /* AFHTTPSessionManager.h */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
 		DBA19F94201715740037FBD7 = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +202,7 @@
 		DBA19FE12017188F0037FBD7 /* WHCNetWorking */ = {
 			isa = PBXGroup;
 			children = (
+				DB666662204E8F7A0026296A /* AFNetworking */,
 				DBA19FE22017188F0037FBD7 /* WHCNetWorkManager.m */,
 				DBA19FE32017188F0037FBD7 /* WHCNetWorkManager.h */,
 			);
@@ -358,9 +398,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBA19FA5201715740037FBD7 /* ViewController.m in Sources */,
+				DB666674204E8F7A0026296A /* AFNetworkReachabilityManager.m in Sources */,
 				DBA19FE4201718900037FBD7 /* WHCNetWorkManager.m in Sources */,
 				DBA19FB0201715740037FBD7 /* main.m in Sources */,
+				DB666672204E8F7A0026296A /* AFURLSessionManager.m in Sources */,
+				DB666671204E8F7A0026296A /* AFHTTPSessionManager.m in Sources */,
+				DB666675204E8F7A0026296A /* AFSecurityPolicy.m in Sources */,
 				DBA19FA2201715740037FBD7 /* AppDelegate.m in Sources */,
+				DB666670204E8F7A0026296A /* AFURLResponseSerialization.m in Sources */,
+				DB666673204E8F7A0026296A /* AFURLRequestSerialization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +571,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BN89HQ2BZZ;
 				INFOPLIST_FILE = NetWorkDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com..NetWorkDemo;
@@ -539,6 +586,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BN89HQ2BZZ;
 				INFOPLIST_FILE = NetWorkDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com..NetWorkDemo;
