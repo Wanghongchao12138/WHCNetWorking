@@ -94,7 +94,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "WHCNetWorking/WHCNetWorking/*"
+  s.source_files  = "WHCNetWorking/WHCNetWorking.h"
 
   # s.source_files  = "WHCNetWorking/*", "Classes/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
