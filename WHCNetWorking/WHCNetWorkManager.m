@@ -8,13 +8,8 @@
 
 #import "WHCNetWorkManager.h"
 #define kRequestTimeOutTime 5
-#define DebugLog(fmt, ...) NSLog((@"[%s Line %d]" fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
-#ifdef DEBUG
+
 #define DLog( s, ... ) NSLog( @"< %@:(%d)> %@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
-#else
-#define DLog( s, ... ) do { } while(0);
-#define DebugLog(...) do {} while(0);
-#endif
 
 @implementation WHCNetWorkManager
 + (instancetype)sharedInstance
