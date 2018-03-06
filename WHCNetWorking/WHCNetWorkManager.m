@@ -224,28 +224,28 @@ static AFNetworkReachabilityManager *managerNetWorkStatus;
         CGFloat prog = 1.0 *downloadProgress.completedUnitCount / downloadProgress.totalUnitCount;
         DLog(@"%f",prog);
         proBlock(prog);
-    } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
+    } destination:^NSURL * (NSURL *  targetPath, NSURLResponse *  response) {
         /**
          * 1:1：请求路径：NSUrl *url = [NSUrl urlWithString:path];从网络请求路径  2：把本地的file文件路径转成url，NSUrl *url = [NSURL fileURLWithPath:fullPath]；
          2：返回值是一个下载文件的路径
          *
          */
         NSString *fullPathStr = [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:response.suggestedFilename];
-        
-        DLog(@"targetPath:%@",targetPath);
-        DLog(@"fullPath:%@",fullPathStr);
+//        
+//        DLog(@"targetPath:%@",targetPath);
+//        DLog(@"fullPath:%@",fullPathStr);
         NSURL *fullP = [NSURL fileURLWithPath:fullPathStr];
         pathBlock(fullP);
         return fullP;
-    } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
+    } completionHandler:^(NSURLResponse * response, NSURL * filePath, NSError * error) {
         /**
          *filePath:下载后文件的保存路径
          */
         if (error) {
-            DLog(@"down error %@",error);
+//            DLog(@"down error %@",error);
             failureBlock(error);
         }else{
-            DLog(@"down success %@",filePath);
+//            DLog(@"down success %@",filePath);
             localHostFilePathBlock(filePath);
         }
     }];
