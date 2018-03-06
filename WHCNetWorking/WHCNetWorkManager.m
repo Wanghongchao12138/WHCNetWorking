@@ -71,7 +71,7 @@ static AFHTTPSessionManager *managerJson;
     [manager POST:urlStr parameters:userInfo progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         successBlock(responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        DebugLog(@"postJson error = %@",error);
+//        DebugLog(@"postJson error = %@",error);
         NSString *errorStr = [error.userInfo objectForKey:@"NSLocalizedDescription"];
         failureBlock(errorStr);
     }];
@@ -91,7 +91,7 @@ static AFHTTPSessionManager *managerJson;
     [manager POST:urlStr parameters:userInfo progress:nil success:^(NSURLSessionDataTask *  task, id   responseObject) {
         successBlock(responseObject);
     } failure:^(NSURLSessionDataTask *  task, NSError *  error) {
-        DebugLog(@"postJson error = %@",error);
+//        DebugLog(@"postJson error = %@",error);
         NSString *errorStr = [error.userInfo objectForKey:@"NSLocalizedDescription"];
         failureBlock(errorStr);
     }];
@@ -105,7 +105,7 @@ static AFHTTPSessionManager *managerJson;
     [manager POST:urlStr parameters:userInfo progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         successBlock(responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        DebugLog(@"postJson error = %@",error);
+//        DebugLog(@"postJson error = %@",error);
         NSString *errorStr = [error.userInfo objectForKey:@"NSLocalizedDescription"];
         failureBlock(errorStr);
     }];
@@ -136,11 +136,11 @@ static AFHTTPSessionManager *managerJson;
                 NSData *data = [[NSData alloc] init];
                 data = UIImageJPEGRepresentation(image, 1.0);
                 CGFloat count = 100;
-                DLog(@"图片大小%ld",data.length);
+//                DLog(@"图片大小%ld",data.length);
                 while (data.length > 300000) {//300k
                     count--;
                     data =  UIImageJPEGRepresentation(image, count / 100);
-                    DLog(@"变化图片大小%ld,%f",data.length,count / 100);
+//                    DLog(@"变化图片大小%ld,%f",data.length,count / 100);
                 }
                 [formData appendPartWithFileData: data name:[NSString stringWithFormat:@"%@",key] fileName:[NSString stringWithFormat:@"%@.jpeg",key] mimeType:@"image/jpeg"];//Type:@"image/jpeg"fileName:[NSString stringWithFormat:@"%@.png"
             }
@@ -149,12 +149,12 @@ static AFHTTPSessionManager *managerJson;
     } progress:^(NSProgress * _Nonnull uploadProgress) {
         nil;
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        DLog(@"上传图片成功了AFN ");
+//        DLog(@"上传图片成功了AFN ");
         successBlock(responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSString *errorStr = [error.userInfo objectForKey:@"NSLocalizedDescription"];
         //        NSLog(@"上传图片失败了了AFN ");
-        DLog(@"上传图片失败了了AFN ");
+//        DLog(@"上传图片失败了了AFN ");
         failureBlock(errorStr);
     }];
 }
@@ -175,7 +175,7 @@ static AFNetworkReachabilityManager *managerNetWorkStatus;
 -(void)getNowNetWorkingStatusSuccessBlock:(void (^)(AFNetworkReachabilityStatus status))successBlock {
     AFNetworkReachabilityManager *managerNetWorkStatus = [self baseHtppRequestNetWorkStatus];
     [managerNetWorkStatus setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus statu) {
-        DLog(@"%ld", statu);
+//        DLog(@"%ld", statu);
         successBlock(statu);
     }];
 
@@ -187,24 +187,24 @@ static AFNetworkReachabilityManager *managerNetWorkStatus;
     //1.创建会话管理者
     AFHTTPSessionManager *manager = [self baseHtppRequest];
 
-    [manager POST:url parameters:userInfo constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+    [manager POST:url parameters:userInfo constructingBodyWithBlock:^(id<AFMultipartFormData>  formData) {
         NSURL *fileUrl = [NSURL fileURLWithPath:filePath];
         [formData appendPartWithFileURL:fileUrl name:fileName error:nil];
         //第二种拼接方法：简写方法
         //[formData appendPartWithFileURL:fileUrl name:@"file" fileName:@"1234.png" mimeType:@"image/png" error:nil];
-    } progress:^(NSProgress * _Nonnull uploadProgress) {
+    } progress:^(NSProgress * uploadProgress) {
 //        uploadProgress.completedUnitCount:已经上传的数据大小
 //        
 //        uploadProgress.totalUnitCount：数据的总大小
         CGFloat prog = 1.0 * uploadProgress.completedUnitCount / uploadProgress.totalUnitCount;
-        DLog(@"%f",prog);
+//        DLog(@"%f",prog);
         proBlock(prog);
         
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        DLog(@"请求成功----%@",responseObject);
+    } success:^(NSURLSessionDataTask * task, id  responseObject) {
+//        DLog(@"请求成功----%@",responseObject);
         successBlock(responseObject);
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error){
-        DLog(@"请求失败----%@",error);
+    } failure:^(NSURLSessionDataTask * task, NSError * error){
+//        DLog(@"请求失败----%@",error);
         failureBlock(error);
     }];
 }
