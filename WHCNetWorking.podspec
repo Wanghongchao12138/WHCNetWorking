@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.author             = { "王红超" => "798907348@qq.com" }
 
-  # s.platform     = :ios, "8.0"
+  s.platform     = :ios, "8.0"
 
   s.source       = { :git => "https://github.com/Wanghongchao12138/WHCNetWorking.git", :tag => "#{s.version}" }
 
@@ -27,6 +27,6 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.dependency 'AFNetworking', '~> 3.0'
+  s.dependency 'AFNetworking', '~> 3.1.0'
 
 end
