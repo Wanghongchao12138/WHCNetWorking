@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name         = "WHCNetWorkingTools"
   
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   
   s.summary      = "基于AFNetWorking 的tools 只是有一些简单的功能使用"
 
