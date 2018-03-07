@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-  s.name         = "WHCNetWorking"
+  s.name         = "WHCNetWorkingTools"
   
   s.version      = "1.0.0"
   
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.author             = { "王红超" => "798907348@qq.com" }
 
-  s.platform     = :ios, "8.0"
+  # s.platform     = :ios, "8.0"
 
   s.source       = { :git => "https://github.com/Wanghongchao12138/WHCNetWorking.git", :tag => "#{s.version}" }
 

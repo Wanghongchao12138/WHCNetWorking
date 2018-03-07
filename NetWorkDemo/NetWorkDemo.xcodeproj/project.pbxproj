@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0AC7A11DC08572C71BA1F36E /* libPods-NetWorkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 407B6A65E56305025638BCA8 /* libPods-NetWorkDemo.a */; };
+		DB414CC0204FA0FC002864C2 /* WHCNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB414CBE204FA0FC002864C2 /* WHCNetWorkManager.m */; };
 		DBA19FA2201715740037FBD7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA19FA1201715740037FBD7 /* AppDelegate.m */; };
 		DBA19FA5201715740037FBD7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA19FA4201715740037FBD7 /* ViewController.m */; };
 		DBA19FA8201715740037FBD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA19FA6201715740037FBD7 /* Main.storyboard */; };
@@ -16,7 +17,6 @@
 		DBA19FB0201715740037FBD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA19FAF201715740037FBD7 /* main.m */; };
 		DBA19FBA201715740037FBD7 /* NetWorkDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA19FB9201715740037FBD7 /* NetWorkDemoTests.m */; };
 		DBA19FC5201715740037FBD7 /* NetWorkDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA19FC4201715740037FBD7 /* NetWorkDemoUITests.m */; };
-		DBA19FE4201718900037FBD7 /* WHCNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA19FE22017188F0037FBD7 /* WHCNetWorkManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +40,8 @@
 		407B6A65E56305025638BCA8 /* libPods-NetWorkDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NetWorkDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		444BD16BD3472B6F6D592BEC /* Pods-NetWorkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetWorkDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetWorkDemo/Pods-NetWorkDemo.release.xcconfig"; sourceTree = "<group>"; };
 		BB96D3A1E02631DCAE60272C /* Pods-NetWorkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetWorkDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetWorkDemo/Pods-NetWorkDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		DB414CBE204FA0FC002864C2 /* WHCNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHCNetWorkManager.m; sourceTree = "<group>"; };
+		DB414CBF204FA0FC002864C2 /* WHCNetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHCNetWorkManager.h; sourceTree = "<group>"; };
 		DBA19F9D201715740037FBD7 /* NetWorkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetWorkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA19FA0201715740037FBD7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DBA19FA1201715740037FBD7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,8 +58,6 @@
 		DBA19FC0201715740037FBD7 /* NetWorkDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetWorkDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA19FC4201715740037FBD7 /* NetWorkDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetWorkDemoUITests.m; sourceTree = "<group>"; };
 		DBA19FC6201715740037FBD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DBA19FE22017188F0037FBD7 /* WHCNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHCNetWorkManager.m; sourceTree = "<group>"; };
-		DBA19FE32017188F0037FBD7 /* WHCNetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHCNetWorkManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +103,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DB414CBD204FA0FC002864C2 /* WHCNetWorkingTools */ = {
+			isa = PBXGroup;
+			children = (
+				DB414CBE204FA0FC002864C2 /* WHCNetWorkManager.m */,
+				DB414CBF204FA0FC002864C2 /* WHCNetWorkManager.h */,
+			);
+			name = WHCNetWorkingTools;
+			path = ../WHCNetWorkingTools;
+			sourceTree = "<group>";
+		};
 		DBA19F94201715740037FBD7 = {
 			isa = PBXGroup;
 			children = (
-				DBA19FE12017188F0037FBD7 /* WHCNetWorking */,
+				DB414CBD204FA0FC002864C2 /* WHCNetWorkingTools */,
 				DBA19F9F201715740037FBD7 /* NetWorkDemo */,
 				DBA19FB8201715740037FBD7 /* NetWorkDemoTests */,
 				DBA19FC3201715740037FBD7 /* NetWorkDemoUITests */,
@@ -158,16 +168,6 @@
 				DBA19FC6201715740037FBD7 /* Info.plist */,
 			);
 			path = NetWorkDemoUITests;
-			sourceTree = "<group>";
-		};
-		DBA19FE12017188F0037FBD7 /* WHCNetWorking */ = {
-			isa = PBXGroup;
-			children = (
-				DBA19FE22017188F0037FBD7 /* WHCNetWorkManager.m */,
-				DBA19FE32017188F0037FBD7 /* WHCNetWorkManager.h */,
-			);
-			name = WHCNetWorking;
-			path = ../WHCNetWorking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,7 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBA19FA5201715740037FBD7 /* ViewController.m in Sources */,
-				DBA19FE4201718900037FBD7 /* WHCNetWorkManager.m in Sources */,
+				DB414CC0204FA0FC002864C2 /* WHCNetWorkManager.m in Sources */,
 				DBA19FB0201715740037FBD7 /* main.m in Sources */,
 				DBA19FA2201715740037FBD7 /* AppDelegate.m in Sources */,
 			);
