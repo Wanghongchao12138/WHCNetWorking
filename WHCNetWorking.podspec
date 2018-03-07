@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/Wanghongchao12138/WHCNetWorking.git", :tag => "#{s.version}" }
 
-  s.source_files  = "WHCNetWorking/**/*.{h,m}"
+  s.source_files  = "WHCNetWorkingTools/**/*.{h,m}"
 
   s.requires_arc = true
 
