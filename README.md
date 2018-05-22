@@ -18,23 +18,24 @@
 
 * 网络监测
 
-   * 第一步 需要在AppDelegate启动的时候添加监测网络的方法
+  * 第一步 需要在AppDelegate启动的时候添加监测网络的方法
 
-```
-  [[WHCNetWorkManager sharedInstance] startMonitoringNetWorking];
-  
- *  AFNetworkReachabilityStatus 回调成功的网络状态
-    * AFNetworkReachabilityStatusUnknown = -1, //未知的状态
-    * AFNetworkReachabilityStatusNotReachable = 0, //不能联网
-    * AFNetworkReachabilityStatusReachableViaWWAN = 1, //流量
-    * AFNetworkReachabilityStatusReachableViaWiFi = 2, //wifi
- ```  
-  * 第二步  可在需要的地方调用如下方法获取当前的网络状态
-```
-[[WHCNetWorkManager sharedInstance] getNowNetWorkingStatusSuccessBlock:^(AFNetworkReachabilityStatus status) {
-    NSLog(@"当前的网络状态是  %ld",status);
- }];
-``` 
+  ```
+    [[WHCNetWorkManager sharedInstance] startMonitoringNetWorking];
+
+   *  AFNetworkReachabilityStatus 回调成功的网络状态
+      * AFNetworkReachabilityStatusUnknown = -1, //未知的状态
+      * AFNetworkReachabilityStatusNotReachable = 0, //不能联网
+      * AFNetworkReachabilityStatusReachableViaWWAN = 1, //流量
+      * AFNetworkReachabilityStatusReachableViaWiFi = 2, //wifi
+   ```  
+
+    * 第二步  可在需要的地方调用如下方法获取当前的网络状态
+  ```
+  [[WHCNetWorkManager sharedInstance] getNowNetWorkingStatusSuccessBlock:^(AFNetworkReachabilityStatus status) {
+      NSLog(@"当前的网络状态是  %ld",status);
+   }];
+  ``` 
 
 ### 下载工程
 本SDK 提供如下列出获取方式:     
