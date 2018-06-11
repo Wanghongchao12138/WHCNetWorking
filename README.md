@@ -49,7 +49,7 @@ $ git clone https://github.com/Wanghongchao12138/WHCNetWorking.git WHCNetWorking
 
 通过Cocoapods 能将本SDK的静态库和代码下载到本地，只需要将类似如下语句中的一句加入你的Podfile：   
 ```ruby
-pod 'WHCNetWorkingTools'
+pod 'WHCNetWorkingTools', '~> 1.0.2'
 ```
 执行 pod install即可.  
 
